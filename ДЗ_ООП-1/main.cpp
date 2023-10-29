@@ -14,9 +14,10 @@ int main()
 	cin >> num_one;
 	cout << "Введите знаменатель:" << endl;
 	cin >> num_two;
-	Fraction fraction;
 
+	Fraction fraction;
 	fraction.input(num_one, num_two);
+
 	do {
 		fraction.show();
 		cout << "1 - Придавить к дроби число " << endl;
@@ -50,7 +51,6 @@ int main()
 		default:
 			break;
 		}
-
 	} while (number != 0);
 
 	return 0;
