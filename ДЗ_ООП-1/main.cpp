@@ -1,4 +1,4 @@
-#include <iostream>
+ï»¿#include <iostream>
 #include<Windows.h>
 #include <iomanip>
 #include "Fraction.h"
@@ -10,9 +10,9 @@ int main()
 	setlocale(LC_ALL, "RU");
 
 	int num_one{}, num_two{}, number{};
-	cout << "Ââåäèòå ÷èñëèòåëü:" << endl;
+	cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ñ‡Ð¸ÑÐ»Ð¸Ñ‚ÐµÐ»ÑŒ:" << endl;
 	cin >> num_one;
-	cout << "Ââåäèòå çíàìåíàòåëü:" << endl;
+	cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ð·Ð½Ð°Ð¼ÐµÐ½Ð°Ñ‚ÐµÐ»ÑŒ:" << endl;
 	cin >> num_two;
 
 	Fraction fraction;
@@ -20,31 +20,31 @@ int main()
 
 	do {
 		fraction.show();
-		cout << "1 - Ïðèäàâèòü ê äðîáè ÷èñëî " << endl;
-		cout << "2 - Îòíÿòü îò äðîáè ÷èñëî " << endl;
-		cout << "3 - Óìíîæèòü äðîáü íà ÷èñëî " << endl;
-		cout << "4 - Ðàçäåëèòü äðîáü íà ÷èñëî " << endl;
-		cout << "0 - Âûõîä! " << endl;
+		cout << "1 - ÐŸÑ€Ð¸Ð´Ð°Ð²Ð¸Ñ‚ÑŒ Ðº Ð´Ñ€Ð¾Ð±Ð¸ Ñ‡Ð¸ÑÐ»Ð¾ " << endl;
+		cout << "2 - ÐžÑ‚Ð½ÑÑ‚ÑŒ Ð¾Ñ‚ Ð´Ñ€Ð¾Ð±Ð¸ Ñ‡Ð¸ÑÐ»Ð¾ " << endl;
+		cout << "3 - Ð£Ð¼Ð½Ð¾Ð¶Ð¸Ñ‚ÑŒ Ð´Ñ€Ð¾Ð±ÑŒ Ð½Ð° Ñ‡Ð¸ÑÐ»Ð¾ " << endl;
+		cout << "4 - Ð Ð°Ð·Ð´ÐµÐ»Ð¸Ñ‚ÑŒ Ð´Ñ€Ð¾Ð±ÑŒ Ð½Ð° Ñ‡Ð¸ÑÐ»Ð¾ " << endl;
+		cout << "0 - Ð’Ñ‹Ñ…Ð¾Ð´! " << endl;
 		cin >> number;
 		switch (number)
 		{
 		case 1:
-			cout << "Ââåäèòå ñëîãàåìîå: " << endl;
+			cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ ÑÐ»Ð¾Ð³Ð°ÐµÐ¼Ð¾Ðµ: " << endl;
 			cin >> num_one;
 			fraction.sum(num_one);
 			break;
 		case 2:
-			cout << "Ââåäèòå âû÷èòàåìîå: " << endl;
+			cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ð²Ñ‹Ñ‡Ð¸Ñ‚Ð°ÐµÐ¼Ð¾Ðµ: " << endl;
 			cin >> num_one;
 			fraction.sub(num_one);
 			break;
 		case 3:
-			cout << "Ââåäèòå ìíîæèòåëü: " << endl;
+			cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ð¼Ð½Ð¾Ð¶Ð¸Ñ‚ÐµÐ»ÑŒ: " << endl;
 			cin >> num_one;
 			fraction.mult(num_one);
 			break;
 		case 4:
-			cout << "Ââåäèòå äåëèòåëü: " << endl;
+			cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ð´ÐµÐ»Ð¸Ñ‚ÐµÐ»ÑŒ: " << endl;
 			cin >> num_one;
 			fraction.div(num_one);
 			break;
