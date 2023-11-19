@@ -9,14 +9,14 @@ int main()
 {
 	setlocale(LC_ALL, "RU");
 
-	int num_one{}, num_two{}, number{};
+	int num_one{}, num_two{}, number{}, num{};
 	cout << "Введите числитель:" << endl;
 	cin >> num_one;
 	cout << "Введите знаменатель:" << endl;
 	cin >> num_two;
 
-	Fraction fraction;
-	fraction.input(num_one, num_two);
+	Fraction fraction(num_one, num_two);
+	//fraction.input(num_one, num_two);
 
 	do {
 		fraction.show();
@@ -30,23 +30,23 @@ int main()
 		{
 		case 1:
 			cout << "Введите слогаемое: " << endl;
-			cin >> num_one;
-			fraction.sum(num_one);
+			cin >> num;
+			fraction.operator+(num);
 			break;
 		case 2:
 			cout << "Введите вычитаемое: " << endl;
-			cin >> num_one;
-			fraction.sub(num_one);
+			cin >> num;
+			fraction.operator-(num);
 			break;
 		case 3:
 			cout << "Введите множитель: " << endl;
-			cin >> num_one;
-			fraction.mult(num_one);
+			cin >> num;
+			fraction.operator*(num);
 			break;
 		case 4:
 			cout << "Введите делитель: " << endl;
-			cin >> num_one;
-			fraction.div(num_one);
+			cin >> num;
+			fraction.operator/(num);
 			break;
 		default:
 			break;
